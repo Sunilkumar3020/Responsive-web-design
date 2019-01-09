@@ -123,7 +123,32 @@
     
 }
 
+/**********Services Section***************/
 
+.section-title{
+    margin-bottom: 2rem;
+}
+
+.section-title p{
+    width: 300px;
+    margin:0 auto;
+}
+
+.section-margin{
+    margin:3rem 0;
+}
+
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow:hidden;
+    padding: 2rem;
+    margin-bottom:2rem;
+    transition: all 0.5s ease-in;
+}
+
+.service-wrap:hover .service-icon{
+    transform: rotate(180deg);
+}
 
 
 
