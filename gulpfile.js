@@ -5,13 +5,14 @@ var gulp = require('gulp'),
     cleanCss    = require('gulp-clean-css'),
     htmlmin  = require('gulp-htmlmin'),
     imagemin = require('gulp-imagemin'),
-    imageminJpegRecompress = require('imagemin-jpeg-recompress'); 
+    imageminJpegRecompress = require('imagemin-jpeg-recompress'),
+    watch = require('gulp-watch');
 
 
 
 // html
 
-gulp.task('html', () =>{
+gulp.task('html', function(){
    console.log('starting minify html file');
     return gulp.src('*.html')
     .pipe(htmlmin({ 
@@ -36,7 +37,7 @@ gulp.task('styles', function(){
 
 
 //images
-gulp.task('image', () =>{
+gulp.task('image', function(){
     console.log('starting image task');
     return gulp.src('img/**/*')
         .pipe(imagemin(
@@ -52,6 +53,8 @@ gulp.task('image', () =>{
 
 // javascript
 
+
+
 gulp.task('script', function(){
     console.log("starting script task");
     return gulp.src('js/**/*.js')
@@ -63,5 +66,31 @@ gulp.task('script', function(){
 
 // Default task
 gulp.task('default', function(){
-   console.log("starting default task"); 
+//   console.log("starting default task"); 
 });
+
+
+// Watch task
+
+gulp.task('watch', function(){
+    console.log('starting watch task');
+    gulp.watch('*.html', gulp.series('html'));
+    gulp.watch('css/**/*.css', gulp.series('styles'));
+    gulp.watch('js/**/*.js', gulp.series('script'));
+    gulp.watch('img/**/*', gulp.series('image'));
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
