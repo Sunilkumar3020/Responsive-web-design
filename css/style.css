@@ -135,7 +135,7 @@
 }
 
 .section-margin{
-    margin:3rem 0;
+    margin:3rem 0 0 0;
 }
 
 .service-wrap{
@@ -151,12 +151,43 @@
 }
 
 
+/********Work Section**********/
 
+.row .no-gutters [class*=col-]{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+    
+    
+.img-wrapper{
+    overflow: hidden;
+}
+    
+.img-wrapper img{
+    transition: all 0.5s ease-out;
+    width:100%;
+    
+}
 
-
-
-
-
+.img-wrapper img:hover{
+    transform: scale(1.6);
+    cursor: zoom-in;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 

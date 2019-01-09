@@ -1,1 +1,1 @@
-$(document).ready(function(){"use strict";$(".slider").ripples({dropRadius:20,perturbance:.01});new Typed("#typed",{stringsElement:"#typed-strings",loop:!0,typeSpeed:130,showCursor:!0,cursorChar:"/",autoInsertCss:!0})});
+$(document).ready(function(){"use strict";$(".slider").ripples({dropRadius:20,perturbance:.01});new Typed("#typed",{stringsElement:"#typed-strings",loop:!0,typeSpeed:130,showCursor:!0,cursorChar:"/",autoInsertCss:!0});$(".work-section").magnificPopup({delegate:"a",type:"image",gallery:{enabled:!0}})});
