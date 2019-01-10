@@ -6,7 +6,20 @@ var gulp = require('gulp'),
     htmlmin  = require('gulp-htmlmin'),
     imagemin = require('gulp-imagemin'),
     imageminJpegRecompress = require('imagemin-jpeg-recompress'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+    browserSync = require('browser-sync').create();
+    
+
+
+//Static server
+gulp.task('browser-sync', function(){
+    
+    
+});
+
+
+
+
 
 
 
@@ -74,19 +87,36 @@ gulp.task('default', function(){
 
 gulp.task('watch', function(){
     console.log('starting watch task');
+    browserSync.init({
+        server:{
+            baseDir: "./dist"
+        }
+    });
+    
+    
+    gulp.watch(['dist/*.html','dist/css/**/*.css', 'dist/js/**/*js', 'dist/img/**/*']).on('change', browserSync.reload);
+    
+    
+    
+    
+    
     gulp.watch('*.html', gulp.series('html'));
     gulp.watch('css/**/*.css', gulp.series('styles'));
+//    gulp.watch('dist/css/**/*.css').on('change', browserSync.reload);
     gulp.watch('js/**/*.js', gulp.series('script'));
     gulp.watch('img/**/*', gulp.series('image'));
 });
-
-
-
-
-
-
-
-
+//
+//
+// gulp.task('cssInject', ['styles'], function(){
+//    return gulp.src('dist/css/**/*.css')
+//     .pipe(browserSync.stream());
+// });
+//
+//
+//
+//
+//
 
 
 

@@ -18,3 +18,27 @@ $(document).ready(function(){
           // other option
     });
 });
+
+$(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          items: 3,
+          loop:true,
+          autoplay:true,
+          autoplayHoverPause:true,
+          smartSpeed: 700,
+          slideTransition: "ease-in",
+
+          responsive:{
+                0:{
+                    items: 1
+                },
+                480:{
+                    items: 2
+                },
+                768:{
+                    items: 3
+                }
+            }
+                                     
+      });
+});
