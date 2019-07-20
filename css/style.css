@@ -213,6 +213,18 @@
 
 }
 
+/* about us start */
+.aboutTitle{
+    margin-bottom: 50px;
+}
+.aboutImg{
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid rgb(109, 107, 107);
+    vertical-align: middle;
+}
+/* about us End */
+
 
 /* Contact form start */
 
