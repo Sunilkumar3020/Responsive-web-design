@@ -352,7 +352,35 @@
         </div>
     </section>
     <!--Team section End-->
+    <!-- About us section Start -->
 
+    <section class="aboutus-area" id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title section-margin text-center">
+                        <h2>About us</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- About us section End -->
     <!--Contact form start-->
     <section class="contact-area" id="contact_area">
         <div class="container-fluid">
@@ -367,30 +395,34 @@
             </div>
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <form action="#" method="POST" id="contactform" class="contact-form">
-                            
+                    <form action="contact-form-handler.php" method="POST" id="contactform" class="contact-form">
+
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name"
+                                    required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                    required>
                             </div>
 
-                            
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="subject" name="subject"
+                                    placeholder="Subject" required>
+                            </div>
+                            <div class="col-md-12">
+                                <textarea name="message" id="message" placeholder="Message" cols="30"
+                                    class="form-control" rows="4" required></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <input type="submit" class="btn btn-success btn-lg mt-4" value="Submit">
+                            </div>
+
+
                         </div>
-                        <div class="row">
-                                <div class="col-md-12">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                            <textarea name="message" id="message" placeholder="Message" cols="30" class="form-control" rows="4" required></textarea>
-                                    </div>
-                                    <div class="col-md-12 text-center">
-                                            <input type="submit" class="btn btn-success btn-lg mt-4" value="Submit">
-                                    </div>
-                        </div>
-                        
+
+
 
                     </form>
                 </div>
