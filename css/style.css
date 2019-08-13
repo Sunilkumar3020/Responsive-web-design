@@ -1,12 +1,13 @@
-*{
-    margin:  0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*******Navigation Menu Start*************/
-.navbar-nav{
+.navbar-nav {
     text-transform: uppercase;
-    
+
 }
 
 
@@ -14,7 +15,7 @@
 
 /*******Slider Start*************/
 
-.slider{
+.slider {
     width: 100%;
     height: 92vh;
     background-image: url(../img/sliderbg.jpeg);
@@ -24,31 +25,32 @@
 }
 
 
-.slider-overlay{
+.slider-overlay {
     width: 100%;
     height: 92vh;
-    background:rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
     position: relative;
 }
 
-.slider-content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 /*********Button Design Start***********/
 
-.cta-div{
+.cta-div {
     margin-top: 10px;
 }
 
-.btn1{
+.btn1 {
     padding: 8px 20px;
-    color:#fff;
-    background-color: transparent; /*#9c27b0*/
+    color: #fff;
+    background-color: transparent;
+    /*#9c27b0*/
     text-transform: uppercase;
     letter-spacing: 1px;
     border-top: 2px solid #fff;
@@ -56,15 +58,16 @@
     border-bottom: 2px solid #fff;
     border-left: 2px solid #fff;
     border-top-left-radius: 15px;
-    width:10rem;
+    width: 10rem;
     transition: all .5s ease-out;
 }
 
-.btn2{
-    width:10rem;
+.btn2 {
+    width: 10rem;
     padding: 8px 20px;
-    color:#fff;
-    background-color: transparent; /*#9c27b0*/
+    color: #fff;
+    background-color: transparent;
+    /*#9c27b0*/
     text-transform: uppercase;
     letter-spacing: 1px;
     border: 2px solid #fff;
@@ -74,12 +77,12 @@
 }
 
 
-.btn1:hover{
+.btn1:hover {
     background-color: #42a5f5;
     font-weight: 400;
 }
 
-.btn2:hover{
+.btn2:hover {
     background-color: #e65100;
     font-weight: 400;
 }
@@ -91,8 +94,8 @@
 
 
 
-.social-networks a .fab{
-    color:#fff;
+.social-networks a .fab {
+    color: #fff;
     margin: 20px 5px;
     border: 1px solid #fff;
     padding: 8px;
@@ -102,7 +105,7 @@
     transition: all .2s ease-in;
 }
 
-.social-networks a .fab:hover{
+.social-networks a .fab:hover {
     background-color: #e65100;
 }
 
@@ -112,99 +115,101 @@
 /******************/
 
 
-#typed{
+#typed {
     font-size: 1.8rem;
-    color:#fff;
-    
-    
+    color: #fff;
+
+
 }
 
 /* Cursor */
 .typed-cursor {
-    color:#fff;
-    font-size:30px;
-    
+    color: #fff;
+    font-size: 30px;
+
 }
 
 /**********Services Section***************/
 
-.section-title{
+.section-title {
     margin-bottom: 2rem;
 }
 
-.section-title p{
+.section-title p {
     width: 300px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.section-margin{
-    margin:3rem 0 0 0;
+.section-margin {
+    margin: 3rem 0 0 0;
 }
 
-.service-wrap{
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    overflow:hidden;
+.service-wrap {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     padding: 2rem;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     transition: all 0.5s ease-in;
 }
 
-.service-wrap:hover .service-icon{
+.service-wrap:hover .service-icon {
     transform: rotate(180deg);
 }
 
 
 /********Work Section**********/
 
-.row .no-gutters [class*=col-]{
+.row .no-gutters [class*=col-] {
     padding-left: 0px;
     padding-right: 0px;
 }
-    
-    
-.img-wrapper{
+
+
+.img-wrapper {
     overflow: hidden;
 }
-    
-.img-wrapper img{
+
+.img-wrapper img {
     transition: all 0.5s ease-out;
-    width:100%;
-    
+    width: 100%;
+
 }
 
-.img-wrapper img:hover{
+.img-wrapper img:hover {
     transform: scale(1.6);
     cursor: zoom-in;
 }
-    
-    
-    
-    
-    /**********Team Members style *************/
-.team-member{
+
+
+
+
+/**********Team Members style *************/
+.team-member {
     margin-right: 15px;
     transition: all .5s ease-in;
 }
-.team-member-info{
+
+.team-member-info {
     text-align: center;
-    margin-top:10px;
-}
-.team-member-name{
-    font-weight: 600;
-    font-size:16px;
-    letter-spacing: 1px;
-    
+    margin-top: 10px;
 }
 
-.team-member-designation{
+.team-member-name {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+
+.team-member-designation {
     font-weight: 200;
-    font-size:13px;
+    font-size: 13px;
     color: deepskyblue;
 }
 
 
 .team-member-social-list li {
-     list-style: none;
+    list-style: none;
     display: inline-block;
     width: 28px;
     height: 28px;
@@ -214,53 +219,42 @@
 }
 
 /* about us start */
-.aboutTitle{
+.aboutTitle {
     margin-bottom: 50px;
 }
-.aboutImg{
+
+.aboutImg {
     width: 50%;
     margin: 0 auto;
     border: 2px solid rgb(109, 107, 107);
     vertical-align: middle;
 }
+
 /* about us End */
 
 
 /* Contact form start */
 
-.contact-area{
+.contact-area {
     margin-top: 50px;
 }
 
-.section-heading{
+.section-heading {
     margin-bottom: 50px;
 }
 
 
-.contact-form input
-{
+.contact-form input {
     margin-bottom: 20px;
 }
 
-input[type="submit"]
-{
+input[type="submit"] {
     margin-bottom: 20px;
 }
 
 /* Contact form start */
-    
 
-.footer{
+
+.footer {
     margin-top: 130px;
 }
-
-
-
-
-
-
-
-
-
-
-
