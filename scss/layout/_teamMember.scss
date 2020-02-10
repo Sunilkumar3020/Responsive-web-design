@@ -1,0 +1,31 @@
+/**********Team Members style *************/
+.team-member {
+  margin-right: 15px;
+  transition: all 0.5s ease-in;
+}
+
+.team-member-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.team-member-name {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.team-member-designation {
+  font-weight: 200;
+  font-size: 13px;
+  color: deepskyblue;
+}
+
+.team-member-social-list li {
+  list-style: none;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-left: 3px;
+  font-size: 15px;
+}

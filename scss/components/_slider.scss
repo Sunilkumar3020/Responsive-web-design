@@ -1,0 +1,23 @@
+.sliders {
+  width: 100%;
+  height: 92vh;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sliders-overlay {
+  width: 100%;
+  height: 92vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.sliders-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
